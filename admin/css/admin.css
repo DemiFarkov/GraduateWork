@@ -1,0 +1,51 @@
+body{
+    background-color: #cdcfcb;
+    overflow: hidden;
+}
+.login_container__form{
+    margin: 0 auto;
+    margin-top: 8vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vw;
+    height: 10vw;
+    background-color: #f3f6f1;
+}
+.form{
+    padding-top: 1vw;
+    margin: 0 auto;
+}
+.form_contaner__set_p__label{
+    width: 8vw;
+    font-size: 1.3vw;
+    display: inline-block;
+}
+.form_contaner__set_p__input{
+    padding-left: .5vw;
+    margin-top: 1vw;    
+    width: 15vw;
+    height: 1.3vw;
+}
+.form_contaner p{
+    text-align: end;
+}
+.submit{
+    margin-top: 1vw;
+    width: 7vw;
+    height: 1.5vw;
+    background-color: #bcc2b8d0;
+    font-size: .9vw;    
+}
+#msgerror{
+    position: absolute;
+    top: -2vw;
+    display: flex;
+    background-color: #f0d6d6;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 2vw;
+    font-size: 1.15vw;
+    
+}
