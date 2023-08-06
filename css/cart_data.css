@@ -1,0 +1,70 @@
+body{
+    
+    background-image: url(/img/icons8-очки-50.png);
+}
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.img {
+    margin: 0 auto;
+    margin-top: 2vw;
+    width: 40vw;
+    height: 40vw;
+    text-align: center;
+    background-image: url(/img/106-1061769_emoji-emotion-happiness-celebration-ashish-party-hat-emoji.png);
+    background-size: cover;
+}
+
+.text {
+    padding: .25vw;
+    margin: 0 auto;
+    margin-top: 7vw;
+    width: 40vw;
+    height: 2vw;
+    font-size: 1.5vw;
+    background-color: aquamarine;
+}
+
+.back {
+    padding: .55vw;
+    margin: 0 auto;
+    width: 40vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+    background-color: rgb(180, 171, 160);
+}
+
+.back a {
+    display: inline-block;
+    width: 40vw;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-color: rgb(113, 112, 112);
+    background-image: url(/img/icons8-очки-50.png);
+    }
+    .img {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .text {
+        width: 100%;
+        padding: 1.5vw;
+        height: 9vw;
+        font-size: 6vw;
+    }
+    .back {
+        padding: 2.5vw;
+        width: 100%;
+        height: 11vw;
+        font-size: 6vw;
+    }
+    .back a {
+        display: inline-block;
+        width: 100%;
+    }
+}

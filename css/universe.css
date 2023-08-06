@@ -1,0 +1,28 @@
+body::-webkit-scrollbar {
+    width: .8vw;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #eff1ed;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;  
+    border: .4vw #a0a29f solid;  /* цвет плашки */
+  }
+  @font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Arimo/Arimo-Italic-VariableFont_wght.ttf) format('ttf'),
+        url(/fonts/Arimo/Arimo-VariableFont_wght.ttf) format('ttf'),
+        url(/fonts/Poppins/Poppins-Regular.ttf) format('ttf'),
+        url(/fonts/Poppins/Poppins-SemiBold.ttf) format('ttf');
+
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+    overflow-x: hidden;
+
+   
+}

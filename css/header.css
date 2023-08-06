@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Arimo/Arimo-Italic-VariableFont_wght.ttf) format('ttf'),
+        url(/fonts/Arimo/Arimo-VariableFont_wght.ttf) format('ttf'),
+        url(/fonts/Poppins/Poppins-Regular.ttf) format('ttf'),
+        url(/fonts/Poppins/Poppins-SemiBold.ttf) format('ttf');
+
+}
+
+.header {
+    font-family: 'Arimo', sans-serif;
+    width: 100%;
+    background: #cdcfcb;
+}
+
+.header_logo {    
+    height: 10vw;
+    border-top: 1px #fff solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header_logo_link {
+    height: 5vw;
+    font-size: 6vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.header_logo_link:visited{
+    color: #fff;
+}
+
+.header_menu_list {
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+
+
+}
+
+.header_menu_list li {
+    width: 20%;
+    height: 5vw;
+    position: relative;
+    border: 1px #fff solid;
+
+
+    border-right: none;
+    text-align: center;
+    margin: auto 0;
+}
+
+.header_menu_list li a {
+    display: flex;
+    height: 100%;
+    color: #454444;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.953125vw;
+    transition: .2s linear;
+}
+
+.header_menu_list li:nth-child(1) {
+    border-left: none
+}
+
+.header_menu_list li a:hover {
+    color: #fff;
+    background: #686967;
+}
+
+@media (max-width: 768px) {
+    .header {
+        z-index: 9999;
+        height: 19vw;
+        background: rgba(0, 0, 0, .25);
+        position: fixed;
+        box-sizing: content-box;
+        border-top: 1px #fff solid;
+        border-bottom: 1px #fff solid;
+    }
+
+    .header_container__burger {
+        width: 20vw;
+        height: 19vw;
+        border-left: 1px #fff solid;
+
+
+    }
+
+    .header_container__burger a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_container__burger__button span {
+        position: relative;
+        height: .4vw;
+        width: 5vw;
+        background: #fff;
+        transition: .1s ease;
+    }
+
+    .header_container__burger__button span::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: -1.5vw;
+        height: .4vw;
+        width: 5vw;
+        background: #fff;
+        transition: .5s ease;
+    }
+
+    .header_container__burger__button span::after {
+        position: absolute;
+        content: "";
+        top: 1.5vw;
+        height: .4vw;
+        width: 5vw;
+        background: #ffffff;
+        transition: .5s ease;
+    }
+
+    .header_container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_logo {
+        padding-right: 3vw;
+        padding-left: 3vw;
+        width: 50%;
+        height: 19vw;
+        display: flex;
+        border: none;
+        border-right: 1px #fff solid;
+    }
+
+    .header_menu {
+        display: inline-block;
+        position: absolute;
+        top: 19vw;
+        right: 0;
+        width: 50vw;
+        height: 19vw;
+        transform: translate(100%, 0px);
+        transition: .5s ease;
+    }
+
+    .header_menu_list {
+        display: block;
+    }
+
+    .header_menu_list li {
+        width: 100%;
+        height: 19vw;
+        background: rgba(190, 189, 183);
+        text-align: start;
+        border-top: none;
+    }
+
+    .header_menu_list li a {
+        font-size: 5vw;
+    }
+
+    .header_menu_list li:nth-child(1) {
+        border-left: 1px #fff solid;
+    }
+
+    .open {
+        opacity: 1;
+        transform: translate(0px, 0px)!important;
+    }
+    .menu_an{
+        background: none !important;
+    }
+    .menu_an::before{
+        transform: translate(0px, 1.5vw) rotate(-45deg);
+    }
+    .menu_an::after{
+        transform: translate(0px, -1.5vw) rotate(45deg);
+    }
+}

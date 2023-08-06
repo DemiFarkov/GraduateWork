@@ -1,0 +1,97 @@
+.refund_container {
+    background: #cdcfcb;
+    overflow-x: hidden;
+}
+
+.parallax_refund__image {
+    background-image: url(/img/refund/welcom_refund.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 28vw;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 60px;
+    align-items: center;
+    position: relative;
+}
+
+.parallax_refund .mask_1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+
+.parallax_refund h1 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    line-height: 4vw;
+    text-align: center;
+    font-size: 3vw;
+    z-index: 3;
+}
+
+.parallax_refund h1 p {
+    padding-right: 7vw;
+    text-align: right;
+    font-size: 1.8vw;
+}
+
+.main_container__title {
+    width: 100%;
+    border-bottom: 1px #fff solid;
+    text-align: center;
+    font-size: 2vw;
+    color: #454444;
+    margin: 0 auto;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.main_container_text{
+    padding-bottom: 3vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.main_container_text_big{
+    margin-top: 1.9vw;
+    font-size: 2vw;
+    color: #454444;
+}
+.main_container_text_small{
+    margin-top: 1.4vw;
+    line-height: 1.9vw;
+    font-size: 1.5vw;
+    color: #454444;
+}
+.main_container_text_list ul{    
+    line-height: 1.9vw;
+    font-size: 1.5vw;
+    color: #454444;
+    list-style-position: inside;
+}
+@media (max-width: 768px) {
+    .parallax_refund__image h1{
+        display: none;
+    }
+    .main_container__title{
+        font-size: 8vw;
+    }
+    .main_container_text_big{
+        padding-top: 2.5vw;
+        font-size: 6vw;
+    }
+    .main_container_text_small{
+        padding-top: 1.5vw;
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    .main_container_text_list ul{
+        padding-top: 1vw;
+        font-size: 4vw;
+        line-height: 6vw;
+
+    }
+}

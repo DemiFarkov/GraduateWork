@@ -1,0 +1,203 @@
+.faq_container {
+  background: #cdcfcb;
+}
+
+.parallax_faq {
+  border-bottom: 1px #fff solid;
+}
+
+.parallax_faq__image {
+  background-image: url(/img/faq/welcome_faq.jpg);
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 30vw;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  align-items: center;
+  position: relative;
+}
+
+.parallax_faq .mask_1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+  z-index: 2;
+}
+
+.parallax_faq h1 {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  line-height: 4vw;
+  text-align: center;
+  font-size: 3vw;
+  z-index: 3;
+}
+
+.accordion_container {
+  padding-bottom: 2vw;
+}
+
+.accordion_container__title {
+  border-bottom: 1px #fff solid;
+  border-top: 1px #fff solid;
+  text-align: center;
+  font-size: 2vw;
+  margin: 0 auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.acco {
+  width: 70vw;
+  margin: 2vw auto 0 auto;
+  display: flex;
+  color: rgba(0, 0, 0, .87);
+  font-family: 'Roboto', sans-serif;
+}
+
+.accordion {
+  width: 70vw;
+}
+
+.accordion input {
+  display: none;
+}
+
+.box {
+  position: relative;
+  background: white;
+  height: 7vw;
+  transition: all .15s ease-in-out;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+header.box {
+  background: #51c1d0;
+  z-index: 100;
+  cursor: initial;
+  box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, .12), 0 2px 4px -4px rgba(0, 0, 0, .24);
+}
+
+header .box-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2vw;
+  color: white;
+  cursor: initial;
+}
+
+.box-title {
+  width: 60vw;
+  height: 7vw;
+  line-height: 2vw;
+  padding: 0 2vw 0 3.5vw;
+  padding-top: 2.5vw;
+  font-size: 2vw;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.box-content {
+  width: 60vw;
+  padding: 2vw 2vw;
+  font-size: 1.5vw;
+  color: rgba(0, 0, 0, .54);
+  display: none;
+}
+
+.box-close {
+  position: absolute;
+  height: 7vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+input:checked+.box {
+  height: auto;
+  margin: 1vw 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+
+input:checked+.box .box-title {
+  border-bottom: 1px solid rgba(0, 0, 0, .18);
+}
+
+input:checked+.box .box-content,
+input:checked+.box .box-close {
+  display: inline-block;
+}
+
+.arrows section .box-title {
+  width: 60vw;
+}
+
+.arrows section .box-title:before {
+  position: absolute;
+  display: block;
+  content: '\203a';
+  font-size: 2vw;
+  left: 2vw;
+  top: 2.5vw;
+  transition: transform .15s ease-in-out;
+  color: rgba(0, 0, 0, .54);
+}
+
+input:checked+section.box .box-title:before {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  .parallax_faq__image h1{
+    display: none;
+  }
+  .accordion_container__title{
+    font-size: 8vw;
+  }
+  .acco{
+    width: 85vw;
+  }
+  .accordion{
+    width: 85vw;
+  }
+  .box{
+    height: 15vw;
+  }
+  .box-title{
+    width: 100% !important;
+    height: 15vw;
+    font-size: 5vw !important;
+    line-height: 5vw;
+  }
+  .name_box{
+    padding-top: 4.5vw;
+  }
+  .box-content{
+    width: 90%;
+    font-size: 3.5vw;
+    line-height: 5vw;
+  }
+}
