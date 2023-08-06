@@ -1,0 +1,14 @@
+<svg width="547" height="61" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="63" width="549" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(41.93289496251535,0,0,40.586437101380206,-3213.0207736617585,-7550.350776884016) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="2" id="svg_1" y="187.505675" x="76.547982" stroke-width="0" fill="#ffffff">Glasses-Motive</text>
+ </g>
+</svg>
